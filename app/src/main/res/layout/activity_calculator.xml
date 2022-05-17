@@ -1,325 +1,375 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Calculator">
+
+
     <TextView
         android:id="@+id/sum"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:paddingVertical="20dp"
+        android:text="725+103"
+        android:textSize="30dp"
+        />
+
     <TextView
         android:id="@+id/pre_result"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="829"
-        android:gravity="end"
-        android:textSize="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:gravity="end"
+
+        android:paddingVertical="5dp"
+        android:text="829"
         android:textColor="@color/grey"
-        app:layout_constraintTop_toBottomOf="@+id/sum"/>
+        android:textSize="20dp"
+         />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="C"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/staples"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="()"
+                android:textColor="@color/green"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/percent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="%"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="/"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="8"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="9"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/x"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="X"
+                android:textColor="@color/green"
+
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="4"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="5"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="6"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="-"
+                android:textColor="@color/green"
+
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="1"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="2"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="3"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/plus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="+"
+                android:textColor="@color/green"
+
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pwm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+
+                android:text="+/-"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+
+                android:text="0"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/comma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text=","
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equally"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_button"
+                android:text="="
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/pre_result"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <Button
+
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_clock"
-                />
-            <Button
+                android:drawableLeft="@drawable/ic_clock" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_ruler"/>
-            <Button
+                android:drawableLeft="@drawable/ic_ruler" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_pi"/>
-            <Button
-                android:layout_width="50dp"
+                android:drawableLeft="@drawable/ic_pi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_long_back"
-                android:layout_marginLeft="180dp"/>
+                android:drawableRight="@drawable/ic_long_back" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/C"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/circle_button"
-        android:backgroundTint="@color/grey"
-        android:paddingTop="10dp"
-        android:text="C"
-        android:textColor="@color/red"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/btn_7"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/staples"
-        app:layout_constraintTop_toBottomOf="@+id/tools" />
-    <Button
-        android:id="@+id/staples"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="()"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/C"
-        app:layout_constraintRight_toLeftOf="@+id/percent"
-        app:layout_constraintTop_toTopOf="@+id/C"/>
-    <Button
-        android:id="@+id/percent"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="%"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/staples"
-        app:layout_constraintRight_toLeftOf="@+id/div"
-        app:layout_constraintTop_toTopOf="@+id/C"/>
-    <Button
-        android:id="@+id/div"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="/"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/percent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/C"/>
-
-    <Button
-        android:id="@+id/btn_7"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circle_button"
-        android:text="7"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btn_8"
-        app:layout_constraintTop_toBottomOf="@+id/C"
-        app:layout_constraintBottom_toTopOf="@id/btn_4"
-        />
-    <Button
-        android:id="@+id/btn_8"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="8"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_7"
-        app:layout_constraintRight_toLeftOf="@+id/btn_9"
-        app:layout_constraintTop_toTopOf="@+id/btn_7"/>
-    <Button
-        android:id="@+id/btn_9"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="9"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_8"
-        app:layout_constraintRight_toLeftOf="@+id/x"
-        app:layout_constraintTop_toTopOf="@+id/btn_7"/>
-    <Button
-        android:id="@+id/x"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="X"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/percent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_7"/>
-
-    <Button
-        android:id="@+id/btn_4"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circle_button"
-        android:text="4"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btn_5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_7"
-        app:layout_constraintBottom_toTopOf="@id/btn_1"
-        />
-    <Button
-        android:id="@+id/btn_5"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="5"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_4"
-        app:layout_constraintRight_toLeftOf="@+id/btn_6"
-        app:layout_constraintTop_toTopOf="@+id/btn_4"/>
-    <Button
-        android:id="@+id/btn_6"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="6"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_5"
-        app:layout_constraintRight_toLeftOf="@+id/minus"
-        app:layout_constraintTop_toTopOf="@+id/btn_4"/>
-    <Button
-        android:id="@+id/minus"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="-"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_6"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_4"/>
-
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circle_button"
-        android:text="1"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btn_5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_4"
-        app:layout_constraintBottom_toTopOf="@+id/pwm"
-        />
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="2"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_1"
-        app:layout_constraintRight_toLeftOf="@+id/btn_6"
-        app:layout_constraintTop_toTopOf="@+id/btn_1"
-
-        />
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="3"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_5"
-        app:layout_constraintRight_toLeftOf="@+id/minus"
-        app:layout_constraintTop_toTopOf="@+id/btn_1"
 
 
-        />
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="+"
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_6"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_1"
-
-        />
-
-    <Button
-        android:id="@+id/pwm"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/circle_button"
-        android:text="+/-"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btn_5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_1" />
-    <Button
-        android:id="@+id/btn_0"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="0"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_1"
-        app:layout_constraintRight_toLeftOf="@+id/btn_6"
-        app:layout_constraintTop_toTopOf="@+id/pwm"
-        app:layout_constraintBottom_toBottomOf="@+id/pwm"
-
-        />
-    <Button
-        android:id="@+id/comma"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text=","
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_5"
-        app:layout_constraintRight_toLeftOf="@+id/minus"
-        app:layout_constraintTop_toTopOf="@+id/pwm"
-        app:layout_constraintBottom_toBottomOf="@+id/pwm"
-        />
-    <Button
-        android:id="@+id/equally"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/circle_button"
-        android:text="="
-        android:textColor="@color/green"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/btn_6"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/pwm"
-        app:layout_constraintBottom_toBottomOf="@+id/pwm"
-        />
-
-
-
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

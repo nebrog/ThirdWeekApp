@@ -43,9 +43,4 @@
         android:textColor="@color/facebook"/>
 
 
-
-
-
-
-
 </androidx.appcompat.widget.LinearLayoutCompat>

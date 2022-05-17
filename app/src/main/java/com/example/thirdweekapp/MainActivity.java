@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     private Button telegram;
     private Button calc;
     private Button facebook;
+    private Button yandexConstraint;
+    private Button telegramConstraint;
+    private Button calcConstraint;
+    private Button facebookConstraint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         telegram = findViewById(R.id.telegram);
         calc = findViewById(R.id.calc);
         facebook = findViewById(R.id.facebook);
+        yandexConstraint = findViewById(R.id.yandex_constraint);
+        telegramConstraint = findViewById(R.id.telegram_constraint);
+        calcConstraint = findViewById(R.id.calc_constraint);
+        facebookConstraint = findViewById(R.id.facebook_constraint);
         click();
     }
     private void click(){
@@ -42,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         telegram.setOnClickListener(tgClick);
-
         View.OnClickListener calcClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         calc.setOnClickListener(calcClick);
-
         View.OnClickListener fbClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,5 +66,39 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         facebook.setOnClickListener(fbClick);
+        View.OnClickListener yaConClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,YandexConstraint.class);
+                MainActivity.this.startActivity(intent);
+            }
+        };
+        yandexConstraint.setOnClickListener(yaConClick);
+        View.OnClickListener tgConClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TelegramConstraint.class);
+                MainActivity.this.startActivity(intent);
+            }
+        };
+        telegramConstraint.setOnClickListener(tgConClick);
+
+        View.OnClickListener calcConClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CalculatorConstraint.class);
+                MainActivity.this.startActivity(intent);
+            }
+        };
+        calcConstraint.setOnClickListener(calcConClick);
+        View.OnClickListener fbConClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,FacebookConstraint.class);
+                MainActivity.this.startActivity(intent);
+            }
+        };
+        facebookConstraint.setOnClickListener(fbConClick);
+
     }
 }

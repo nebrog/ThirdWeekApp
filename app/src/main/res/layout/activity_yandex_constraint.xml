@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".Yandex">
+
+        <ImageView
+        android:id="@+id/ya_cover_constraint"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/ic_ya_cover"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ya_album_constraint"
+        />
+
+            <SeekBar
+        android:id="@+id/seekbar_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/singer_constraint"/>
+
+            <TextView
+                android:id="@+id/ya_playing_now_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сейчас играет"
+                android:textColor="@color/grey"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toRightOf="@+id/ya_hide_constraint"
+                app:layout_constraintRight_toRightOf="@+id/ya_devices_constraint"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/ya_album_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Музыка для спорта"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/ya_hide_constraint"
+                app:layout_constraintRight_toRightOf="@+id/ya_devices_constraint"
+                app:layout_constraintTop_toBottomOf="@id/ya_playing_now_constraint"/>
+        <TextView
+                android:id="@+id/ya_track_name_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Something In The Way"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ya_cover_constraint"
+                app:layout_goneMarginLeft="10dp"/>
+
+
+
+    <TextView
+                android:id="@+id/singer_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Nirvana"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ya_track_name_constraint"
+                app:layout_goneMarginLeft="10dp"/>
+
+    <TextView
+                android:id="@+id/start_time_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0:00"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekbar_constraint"/>
+
+            <TextView
+                android:id="@+id/end_time_constraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="4:14"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekbar_constraint"
+                />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ya_hide_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_ya_hide"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ya_devices_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_ya_devices"
+            app:layout_constraintRight_toLeftOf="@+id/ya_more_constraint"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/ya_more_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_ya_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ya_share_constraint"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_ya_share"
+            android:gravity="center"
+            app:layout_constraintRight_toLeftOf="@+id/ya_setting_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/ya_cover_constraint"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ya_setting_constraint"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_ya_setting"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ya_cover_constraint"
+            />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dislike_constraint"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_ya_dislike"
+        app:layout_constraintBottom_toBottomOf="@id/play_constraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/prefer_constraint"
+        app:layout_constraintTop_toTopOf="@+id/play_constraint" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prefer_constraint"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_ya_previos"
+            app:layout_constraintBottom_toBottomOf="@+id/play_constraint"
+            app:layout_constraintLeft_toRightOf="@+id/dislike_constraint"
+            app:layout_constraintRight_toLeftOf="@id/play_constraint"
+            app:layout_constraintTop_toTopOf="@+id/play_constraint"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/play_constraint"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/ic_ya_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/prefer_constraint"
+            app:layout_constraintRight_toLeftOf="@id/next_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/ya_cover_constraint"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_constraint"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_ya_next"
+            app:layout_constraintBottom_toBottomOf="@+id/play_constraint"
+            app:layout_constraintLeft_toRightOf="@id/play_constraint"
+            app:layout_constraintRight_toLeftOf="@id/like_constraint"
+            app:layout_constraintTop_toTopOf="@id/play_constraint"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/like_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_ya_like"
+            app:layout_constraintBottom_toBottomOf="@+id/play_constraint"
+            app:layout_constraintLeft_toRightOf="@id/next_constraint"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/play_constraint"
+            />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/repeat_constraint"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_ya_repeat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tuning_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_ya_tuning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/repeat_constraint"
+            app:layout_constraintRight_toLeftOf="@id/sub_text_constraint"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sub_text_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_ya_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tuning_constraint"
+            app:layout_constraintRight_toLeftOf="@id/timer_constraint"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/timer_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_ya_timer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/sub_text_constraint"
+            app:layout_constraintRight_toLeftOf="@id/random_constraint"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/random_constraint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_ya_random"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

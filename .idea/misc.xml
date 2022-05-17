@@ -3,13 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable-anydpi/ic_clock.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable-anydpi/ic_photo_user.xml" value="0.1" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable-anydpi/ic_ya_devices.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable-anydpi/ic_ya_hide.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable-anydpi/ic_ya_more.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable/circle_button.xml" value="0.10833333333333334" />
-        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_calculator.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/drawable/test_circle.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_calculator.xml" value="0.1" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_calculator_constraint.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_facebook.xml" value="0.1272644927536232" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_facebook_constraint.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_telegram.xml" value="0.25" />
-        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_yandex.xml" value="0.1272644927536232" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_telegram.xml" value="0.22" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_telegram_constraint.xml" value="0.33" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_yandex.xml" value="0.25" />
+        <entry key="..\:/Users/Uspeh/AndroidStudioProjects/ThirdWeekApp/app/src/main/res/layout/activity_yandex_constraint.xml" value="0.13903985507246377" />
       </map>
     </option>
   </component>

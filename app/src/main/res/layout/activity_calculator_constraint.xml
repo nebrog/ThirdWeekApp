@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorConstraint">
+
+
+    <TextView
+        android:id="@+id/sum_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:paddingVertical="20dp"
+        android:text="725+103"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/pre_result_constraint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pre_result_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="end"
+        android:paddingVertical="5dp"
+        android:text="829"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/sum_constraint" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clock_constraint"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_clock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pre_result_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ruler_constraint"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_ruler"
+        app:layout_constraintLeft_toRightOf="@+id/clock_constraint"
+        app:layout_constraintTop_toTopOf="@+id/clock_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pi_constraint"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_pi"
+        app:layout_constraintLeft_toRightOf="@+id/ruler_constraint"
+        app:layout_constraintTop_toTopOf="@+id/clock_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/long_back_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/ic_long_back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clock_constraint" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/C_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/circle_button"
+        android:text="C"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_7_constraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/staples_constraint"
+        app:layout_constraintTop_toBottomOf="@+id/clock_constraint"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/staples_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/circle_button"
+        android:text="()"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/C_constraint"
+        app:layout_constraintLeft_toRightOf="@id/C_constraint"
+        app:layout_constraintRight_toLeftOf="@+id/percent_constraint"
+        app:layout_constraintTop_toTopOf="@id/C_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/percent_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="%"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/C_constraint"
+        app:layout_constraintLeft_toRightOf="@id/staples_constraint"
+        app:layout_constraintRight_toLeftOf="@+id/div_constraint"
+        app:layout_constraintTop_toTopOf="@id/C_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/div_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/circle_button"
+        android:text="/"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/C_constraint"
+        app:layout_constraintLeft_toRightOf="@id/percent_constraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/C_constraint" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_7_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/circle_button"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_4_constraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_8_constraint"
+        app:layout_constraintTop_toBottomOf="@+id/C_constraint"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_8_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_7_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_7_constraint"
+        app:layout_constraintRight_toLeftOf="@id/btn_9_constraint"
+        app:layout_constraintTop_toTopOf="@id/btn_7_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_9_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_7_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_8_constraint"
+        app:layout_constraintRight_toLeftOf="@id/x_constraint"
+        app:layout_constraintTop_toTopOf="@id/btn_7_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/x_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="X"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_7_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_9_constraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_7_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_4_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_1_constraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_5_constraint"
+
+        app:layout_constraintTop_toBottomOf="@id/btn_7_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_5_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_4_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_4_constraint"
+        app:layout_constraintRight_toLeftOf="@id/btn_6_constraint"
+
+        app:layout_constraintTop_toTopOf="@id/btn_4_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_6_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_4_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_5_constraint"
+        app:layout_constraintRight_toLeftOf="@id/minus_constraint"
+        app:layout_constraintTop_toTopOf="@id/btn_4_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minus_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/circle_button"
+        android:text="-"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_4_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_6_constraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_4_constraint" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_1_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/pwm_constraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_2_constraint"
+
+        app:layout_constraintTop_toBottomOf="@id/btn_4_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_2_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_1_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_1_constraint"
+        app:layout_constraintRight_toLeftOf="@id/btn_3_constraint"
+
+        app:layout_constraintTop_toTopOf="@id/btn_1_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_3_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_1_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_2_constraint"
+        app:layout_constraintRight_toLeftOf="@id/plus_constraint"
+
+        app:layout_constraintTop_toTopOf="@id/btn_1_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="+"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_1_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_3_constraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_1_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pwm_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="+/-"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_0_constraint"
+        app:layout_constraintTop_toBottomOf="@id/btn_1_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_0_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/pwm_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/pwm_constraint"
+        app:layout_constraintRight_toLeftOf="@id/comma_constraint"
+        app:layout_constraintTop_toTopOf="@id/pwm_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/comma_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text=","
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/pwm_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/btn_0_constraint"
+        app:layout_constraintRight_toLeftOf="@id/equally_constraint"
+        app:layout_constraintTop_toTopOf="@id/pwm_constraint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/equally_constraint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:text="="
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/pwm_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/comma_constraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pwm_constraint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
