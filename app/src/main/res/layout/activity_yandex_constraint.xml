@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="#738C84"
+    android:padding="8dp"
     tools:context=".Yandex">
 
     <ImageView
         android:id="@+id/ya_cover_constraint"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@mipmap/ic_ya_cover"
+        android:src="@drawable/cover_album"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ya_album_constraint" />
@@ -20,6 +21,7 @@
         android:id="@+id/seekbar_constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:thumbTint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/singer_constraint" />
 
     <TextView
@@ -27,7 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Сейчас играет"
-        android:textColor="@color/grey"
+        android:textColor="@color/white"
+        android:alpha="0.6"
         android:textSize="12dp"
         app:layout_constraintLeft_toRightOf="@+id/ya_hide_constraint"
         app:layout_constraintRight_toRightOf="@+id/ya_devices_constraint"
@@ -64,7 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:text="Nirvana"
-        android:textColor="@color/grey"
+        android:textColor="@color/white"
+        android:alpha="0.6"
         android:textSize="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ya_track_name_constraint"
@@ -76,7 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:text="0:00"
-        android:textColor="@color/grey"
+        android:textColor="@color/white"
+        android:alpha="0.8"
         android:textSize="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekbar_constraint" />
@@ -87,8 +92,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginRight="10dp"
+        android:alpha="0.8"
         android:text="4:14"
-        android:textColor="@color/grey"
+        android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekbar_constraint" />
@@ -130,7 +136,7 @@
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginRight="6dp"
+        android:layout_marginRight="10dp"
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/ic_ya_share"
