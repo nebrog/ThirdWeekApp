@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_7_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/staples_constraint"
-        app:layout_constraintTop_toBottomOf="@+id/clock_constraint"/>
+        app:layout_constraintTop_toBottomOf="@+id/clock_constraint" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/staples_constraint"
@@ -139,7 +139,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_4_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/btn_8_constraint"
-        app:layout_constraintTop_toBottomOf="@+id/C_constraint"/>
+        app:layout_constraintTop_toBottomOf="@+id/C_constraint" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_8_constraint"

@@ -7,99 +7,93 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/yandex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Yandex.Музыка"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/without_constraint_text"
         app:layout_constraintBottom_toTopOf="@+id/telegram"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/without_constraint_text" />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/facebook"
-        android:text="Facebook"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/facebook"
+        android:text="Facebook"
         app:layout_constraintBottom_toTopOf="@+id/constraint_text"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/telegram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/telegram"
         android:text="Telegram"
+        app:layout_constraintBottom_toTopOf="@+id/calc"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yandex"
-        app:layout_constraintBottom_toTopOf="@+id/calc"
-        android:backgroundTint="@color/telegram"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/yandex" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Калькуятор"
+        app:layout_constraintBottom_toTopOf="@+id/facebook"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telegram"
-        app:layout_constraintBottom_toTopOf="@+id/facebook"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/telegram" />
 
     <Button
         android:id="@+id/yandex_constraint"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/facebook"
         android:text="Яндекс.Музыка"
         app:layout_constraintBottom_toTopOf="@+id/telegram_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraint_text"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/constraint_text" />
+
     <Button
         android:id="@+id/telegram_constraint"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/facebook"
         android:text="Telegram"
         app:layout_constraintBottom_toTopOf="@+id/calc_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yandex_constraint"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/yandex_constraint" />
 
 
     <Button
         android:id="@+id/calc_constraint"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/facebook"
         android:text="Калькулятор"
         app:layout_constraintBottom_toTopOf="@+id/facebook_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telegram_constraint"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/telegram_constraint" />
+
     <Button
         android:id="@+id/facebook_constraint"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/facebook"
         android:text="Facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calc_constraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:backgroundTint="@color/facebook"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/calc_constraint" />
+
     <TextView
         android:id="@+id/without_constraint_text"
         android:layout_width="match_parent"
@@ -111,8 +105,8 @@
         app:layout_constraintBottom_toTopOf="@+id/yandex"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/constraint_text"
         android:layout_width="match_parent"
@@ -122,9 +116,7 @@
         android:text="Constraint Layout"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/yandex_constraint"
-        app:layout_constraintTop_toBottomOf="@+id/facebook"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

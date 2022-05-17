@@ -29,7 +29,7 @@
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_constraint"/>
+        app:layout_constraintTop_toBottomOf="@+id/email_constraint" />
 
     <EditText
         android:id="@+id/email_constraint"
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/fb_icon_constraint"
@@ -51,8 +51,7 @@
         android:src="@drawable/facebook"
         app:layout_constraintBottom_toTopOf="@+id/email_constraint"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-         />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/support_constraint"
@@ -62,8 +61,7 @@
         android:textColor="@color/facebook"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_constraint"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/enter_constraint" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
