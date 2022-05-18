@@ -23,11 +23,50 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:gravity="end"
-
         android:paddingVertical="5dp"
         android:text="829"
         android:textColor="@color/grey"
         android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_clock" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_ruler" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_pi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_long_back" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linear"
@@ -326,46 +365,9 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_clock" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_ruler" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/ic_pi" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
-                android:drawableRight="@drawable/ic_long_back" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-    </androidx.cardview.widget.CardView>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
